@@ -67,23 +67,23 @@ public class FlutterGUmpushPlugin implements MethodCallHandler {
 
 
 
-    UMConfigure.init(this, "替换为Appkey,服务后台位置：应用管理 -> 应用信息 -> Appkey", "Umeng", UMConfigure.DEVICE_TYPE_PHONE, "替换为秘钥信息,服务后台位置：应用管理 -> 应用信息 -> Umeng Message Secret");
-//获取消息推送代理示例
-    PushAgent mPushAgent = PushAgent.getInstance(this);
-//注册推送服务，每次调用register方法都会回调该接口
-    mPushAgent.register(new IUmengRegisterCallback() {
-
-      @Override
-      public void onSuccess(String deviceToken) {
-        //注册成功会返回deviceToken deviceToken是推送消息的唯一标志
-        Log.i(TAG,"注册成功：deviceToken：-------->  " + deviceToken);
-      }
-
-      @Override
-      public void onFailure(String s, String s1) {
-        Log.e(TAG,"注册失败：-------->  " + "s:" + s + ",s1:" + s1);
-      }
-    });
+//    UMConfigure.init(this, "替换为Appkey,服务后台位置：应用管理 -> 应用信息 -> Appkey", "Umeng", UMConfigure.DEVICE_TYPE_PHONE, "替换为秘钥信息,服务后台位置：应用管理 -> 应用信息 -> Umeng Message Secret");
+////获取消息推送代理示例
+//    PushAgent mPushAgent = PushAgent.getInstance(this);
+////注册推送服务，每次调用register方法都会回调该接口
+//    mPushAgent.register(new IUmengRegisterCallback() {
+//
+//      @Override
+//      public void onSuccess(String deviceToken) {
+//        //注册成功会返回deviceToken deviceToken是推送消息的唯一标志
+//        Log.i(TAG,"注册成功：deviceToken：-------->  " + deviceToken);
+//      }
+//
+//      @Override
+//      public void onFailure(String s, String s1) {
+//        Log.e(TAG,"注册失败：-------->  " + "s:" + s + ",s1:" + s1);
+//      }
+//    });
 
   }
   void setAutoAlert(boolean isAlert){

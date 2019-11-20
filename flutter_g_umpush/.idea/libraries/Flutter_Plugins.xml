@@ -4,6 +4,8 @@
       <root url="file://$PROJECT_DIR$" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/android/src/main/java" />
+    </SOURCES>
   </library>
 </component>
