@@ -113,7 +113,7 @@ class FlutterGUmpush {
   static Future<bool> initWithAppkey(String appKey, String channel) async {
     _channel.setMethodCallHandler(_handler);
     final bool result = await _channel.invokeMethod('initWithAppkey',{"appKey":appKey,"channel":channel});
-    return result;
+    return true;
   }
 
   //设置别名
